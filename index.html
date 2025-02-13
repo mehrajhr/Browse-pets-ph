@@ -1,4 +1,4 @@
-<!DOCTYPE html >
+<!DOCTYPE html>
 <html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
@@ -43,6 +43,8 @@
           extend: {
             colors: {
               clifford: "#da373d",
+              navcolor: "#FFF9F4",
+              accent: "#FFDC26",
             },
           },
         },
@@ -50,13 +52,69 @@
     </script>
   </head>
   <body>
-    <header>
-        <nav>
-            
-        </nav>
+    <header class="bg-navcolor">
+      <nav class="md:container mx-auto border border-b-black lg:border-none">
+        <div class="navbar">
+          <div class="navbar-start">
+            <img src="c1-assets/logo-header.png" alt="" />
+            <a
+              class="btn btn-ghost font-normal text-2xl font-sora hidden lg:block mt-4"
+              >Browse4Pets</a
+            >
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li><a>Breeds</a></li>
+              <li><a>Contact us</a></li>
+              <li><a>Find a pet</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+            <ul
+              class="menu menu-horizontal px-1 space-x-3 hidden md:inline-flex"
+            >
+              <li><i class="fa-regular fa-bell"></i></li>
+              <li>
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </li>
+              <li>
+                <button class="btn btn-sm px-6 border border-accent">
+                  Login
+                </button>
+              </li>
+              <li>
+                <button class="btn btn-sm px-6 bg-accent">Register</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
-    <main></main>
+
+    <main class="md:container mx-auto">
+        <!-- Hero section -->
+      <section class="md:container mx-aumd:min-w-screen to my-12">
+        <div
+          class="hero md:min-h-screen flex justify-start items-start pt-4"
+          style="
+            background-image: url(c1-assets/cat-big.png);
+            background-size:contain;
+            background-repeat: no-repeat;
+          "
+        >
+        <div class="max-w-md p-4 pb-80 md:p-0">
+            <h1 class="mb-5 text-4xl font-bold font-adlam-display space-y-3">Pamper Your Pet,<br>Because They Deserve the Bes</h1>
+            <p class="mb-5 text-gray-500 text-sm">
+              Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now and make tails wag with joy!
+            </p>
+            <button class="btn btn-sm bg-accent px-6">Find a pet</button>
+          </div>
+        </div>
+      </section>
+    </main>
     <footer></footer>
   </body>
 </html>
-    
